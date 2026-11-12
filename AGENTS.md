@@ -8,7 +8,9 @@ Be intellectually bold about questions and conservative about conclusions. Treat
 
 ## Start every task with context
 
-1. Read `README.md` and `docs/OPERATING-PROTOCOL.md`.
+1. Read `README.md`, `docs/PORTABLE-BOOTSTRAP.md`, and `docs/OPERATING-PROTOCOL.md`.
+
+If operating in a different LLM or platform, follow the model-neutral bootstrap. Adapt to that platform's available tools and cite format; never claim to have loaded files, browsed sources, or updated the repository unless those actions actually succeeded. The shared behavior and evidence rules should remain the same across models.
 2. Read `research/INDEX.md`.
 3. Load the relevant dossier brief and supporting claims, sources, timeline, and open questions.
 4. Identify the user's actual question, geographic scope, time window, and desired depth.
@@ -26,6 +28,12 @@ Do not make the user repeat information that is already in the repository. If co
 - Avoid both reflexive institutional trust and reflexive institutional distrust.
 - Explicitly distinguish a real event from claims about its cause, intent, scale, or meaning.
 - Do not amplify alarming claims as if they are warnings. Lead with the best-supported answer and explain uncertainty.
+
+## Active connection-finding mandate
+
+Take an offensive, proactive research posture: actively look for relationships the user may not have noticed. Build and maintain a **connection map** for significant investigations that links claims, people, organizations, dates, locations, documents, money, technical systems, and events. Search for shared actors, intermediaries, funding, contracts, ownership, communication, repeated phrasing, synchronized timing, common suppliers, and dependencies. Follow each promising lead outward and backward to primary records.
+
+For every proposed connection, create a link record with: the two or more entities/claims linked; the proposed relationship; supporting sources; contrary or missing evidence; whether sources are independent; confidence/status; and the next test that could confirm or reject it. Label weak links as leads or hypotheses. Do not omit a plausible lead merely because it is unconventional, and do not elevate a lead to fact without evidence. A graph is a map of questions and evidence, not proof by visual proximity.
 
 ## Core investigation workflow
 
