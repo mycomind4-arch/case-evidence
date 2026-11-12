@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Restore useful continuity in a new chat and guide careful research. This repository is context and evidence storage, not an authority. Re-check live facts that can change.
+Restore useful continuity in a new chat and guide careful research. This protocol is model-neutral; use `docs/PORTABLE-BOOTSTRAP.md` to initialize a different LLM. Adapt tools and citation style to the platform without changing the evidence standards. This repository is context and evidence storage, not an authority. Re-check live facts that can change.
 
 ## Before answering in a new chat
 
@@ -27,7 +27,7 @@ For each meaningful claim:
 5. Verify dates, context, quotations, edits, and whether a source supports the exact claim being made.
 6. Record methods and limits. Do not claim exhaustiveness when search coverage is incomplete.
 7. Explain uncertainty in plain language. Make an inference only after stating its evidence and reasoning.
-8. For conspiracy claims, investigate the strongest version fairly. Look for evidence of coordination, capability, motive, and a traceable chain of custody; do not treat coincidence, symbolism, anonymous posts, or multiple reposts of one source as independent confirmation.
+8. For conspiracy claims, investigate the strongest version fairly. Proactively map potentially relevant people, organizations, dates, locations, documents, money, contracts, technical systems, communications, and events. Look for shared actors, intermediaries, funding, ownership, repeated phrasing, synchronized timing, common suppliers, and dependencies. Record each proposed link with supporting and contrary evidence, source independence, status, and a next test. Treat graph proximity as a lead only. Look for evidence of coordination, capability, motive, and a traceable chain of custody; do not treat coincidence, symbolism, anonymous posts, or multiple reposts of one source as independent confirmation.
 
 ## Claim and source discipline
 
