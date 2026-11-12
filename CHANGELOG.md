@@ -1,12 +1,16 @@
 # Changelog
 
+## 2026-11-12 — Add substantial fresh-chat research test
+- Added a dated 3I/ATLAS dossier covering orbit, observations, isotopic composition, comet activity, dust modeling, radio searches, source quality, and open questions.
+- Added atomic claims, source register, chronology, connection map, open questions, and a 12-question fresh-chat retrieval test.
+- Updated the research index. Snapshot date and source-specific caveats are explicit; volatile facts require refresh.
+
 ## 2026-11-11 — Replace repository concept
 - Replaced the original MailMyPDF case-evidence platform README with a loadable research-memory README.
 - Added an operating protocol for new-chat context restoration and evidence handling.
 - Added the first topic dossier: November 17 blackout, blue streetlights, and 18 GHz/vaccine claims.
 - Preserved corrections for prior inconsistent outage wording and episode-date description.
 - Source status reflects a research snapshot as of 2026-11-11; volatile facts require live rechecking.
-
 
 ## 2026-11-11 — Portable and connection-focused research behavior
 - Added a model-neutral bootstrap prompt for loading the same research context across LLM platforms.
