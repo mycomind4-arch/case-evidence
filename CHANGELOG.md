@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-12 — Blind audit experiment
+- Added a fresh-chat prompt that requires an initial 3I/ATLAS source audit before reading the existing audit note.
+- Added the prompt to the README so it is discoverable.
+- The test requires source access reporting, source independence checks, unresolved claims, and comparison of independently found issues with the prior audit.
+
 ## 2026-11-12 — Primary-source audit and retrieval-test improvements
 - Compared the dossier with NASA's current overview and methane/SPHEREx reports, the MPC MPEC, the isotope-paper abstract/full-text record, the post-perihelion spectroscopy paper, and Breakthrough Listen's project page.
 - Corrected the ambiguous “earliest observation” account: TESS photometry began May 7; NASA's discovery archive extends to June 14; the cited MPC orbit-fit input span begins May 8. These refer to different datasets.
