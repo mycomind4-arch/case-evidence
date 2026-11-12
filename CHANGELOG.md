@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-12 — Primary-source audit and retrieval-test improvements
+- Compared the dossier with NASA's current overview and methane/SPHEREx reports, the MPC MPEC, the isotope-paper abstract/full-text record, the post-perihelion spectroscopy paper, and Breakthrough Listen's project page.
+- Corrected the ambiguous “earliest observation” account: TESS photometry began May 7; NASA's discovery archive extends to June 14; the cited MPC orbit-fit input span begins May 8. These refer to different datasets.
+- Expanded the radio-search scope: ATA 1–9 GHz; GBT 1–12 GHz with no localized artificial radio emission reported in analyzed data; Parkes/Murriyang 704–4032 MHz narrowband result still pending on the checked project page.
+- Strengthened the load test so retrieval and primary-source audit are scored separately and self-awarded perfect scores are not accepted.
+- Added AUDIT-2026-11-12.md with verified findings, unresolved access limits, and precise corrections.
+
 ## 2026-11-12 — Add substantial fresh-chat research test
 - Added a dated 3I/ATLAS dossier covering orbit, observations, isotopic composition, comet activity, dust modeling, radio searches, source quality, and open questions.
 - Added atomic claims, source register, chronology, connection map, open questions, and a 12-question fresh-chat retrieval test.
