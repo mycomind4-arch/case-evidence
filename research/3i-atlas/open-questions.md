@@ -7,11 +7,13 @@ Snapshot: 2026-11-12. These are research tasks, not claims that a finding is mis
 1. **Refresh the orbit and visibility:** check current MPC and JPL solutions, record epoch, covariance/uncertainties, and whether later astrometry changes any close-approach values.
 2. **Read the full A&A dust paper:** extract model alternatives, goodness-of-fit comparison, parameter degeneracies, and supplementary data; distinguish submitted/accepted dates from online publication.
 3. **Reconcile activity rates:** build a table of H2O, CO2, CO, CN, Ni, Fe and dust production rates by observing date, heliocentric distance, instrument, retrieval method, and uncertainty.
-4. **Check the Nature paper's supplemental/data records:** verify isotope values, retrieval systematics, archival observation IDs, and whether the 11–12 Gyr interpretation remains the authors' preferred model after caveats.
-5. **Map technosignature coverage:** compile frequency range, bandwidth, polarization, cadence, sensitivity/EIRP threshold, distance, and observing time for ATA, GBT, Murriyang, and FAST papers. Specifically mark which observations do and do not cover 18 GHz.
+4. **Check the Nature paper's supplemental/data records:** verify isotope values, retrieval systematics, archival observation IDs, and whether the 12 Gyr interpretation remains the authors' preferred model after caveats.
+5. **Map technosignature coverage:** compile frequency range, bandwidth, polarization, cadence, sensitivity/EIRP threshold, distance, and observing time for ATA, GBT, Murriyang, MeerKAT, and FAST papers. Specifically mark which observations do and do not cover 18 GHz; separate completed analyses from pending work.
 6. **Track independent confirmation:** separate papers using independent instruments/data from papers reanalyzing the same images or spectra.
 7. **Check the nucleus constraint:** compare Hubble extraction and post-perihelion nucleus-size estimates, state assumptions about coma, dust, and albedo.
 8. **Look for null or conflicting results:** especially for claimed spectral features, unusual acceleration, jets, or non-gravitational dynamics.
+9. **Trace earliest-data terminology:** distinguish TESS archival photometry, NASA's discovery-archive observations, and astrometric observations included in particular MPC orbital solutions.
+10. **Read underlying papers when possible:** search snippets and abstracts can locate results but do not fully verify methods, uncertainty, or the caveats.
 
 ## Questions that should remain open
 
@@ -21,6 +23,7 @@ Snapshot: 2026-11-12. These are research tasks, not claims that a finding is mis
 - How do the observed volatile ratios compare at matched heliocentric distance and after accounting for instrument/retrieval differences?
 - What fraction of the object's dust/gas mass loss is represented by current observing windows?
 - Are apparent morphological changes driven by rotation, evolving activity, projection, or some combination?
+- What is the current status of Parkes/Murriyang, MeerKAT, and FAST analyses after the checked project page was last updated?
 
 ## Claims requiring a high evidence threshold
 
