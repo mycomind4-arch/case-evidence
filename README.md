@@ -1,18 +1,19 @@
 # Research Memory
 
-> **Start here in a new chat.** Read this file first, then read [the operating protocol](docs/OPERATING-PROTOCOL.md), [the dossier index](research/INDEX.md), and the dossier relevant to the user's request. Use the dossier to restore context; verify any time-sensitive claim from current primary sources before relying on it.
+> **Start here in any new chat.** Attach this repository or provide its files. Use [the portable bootstrap prompt](docs/PORTABLE-BOOTSTRAP.md), then read [AGENTS.md](AGENTS.md), [the operating protocol](docs/OPERATING-PROTOCOL.md), [the dossier index](research/INDEX.md), and the dossier relevant to the user's request. Verify time-sensitive claims from current primary sources before relying on them.
 
-This repository is a durable, source-grounded context system for research conducted with an AI assistant. It is designed to be loaded on demand in a new conversation.
+This is a model-neutral, source-grounded research memory for restoring context and behavior across different LLMs. It stores the common research method and evidence record; each LLM must use the tools available in its current environment and must not pretend to have capabilities it lacks.
 
 ## Load sequence
 
-1. Read this README.
-2. Read [docs/OPERATING-PROTOCOL.md](docs/OPERATING-PROTOCOL.md) for behavior and evidence rules.
-3. Read [research/INDEX.md](research/INDEX.md) to find the relevant topic.
-4. Read the topic's `BRIEF.md`, then its claims, sources, timeline, and open questions as needed.
-5. Tell the user what context was loaded and flag any stale or unresolved facts.
+1. Attach or provide this repository to the LLM.
+2. Use the prompt in `docs/PORTABLE-BOOTSTRAP.md`.
+3. Read this README, `AGENTS.md`, and `docs/OPERATING-PROTOCOL.md`.
+4. Read `research/INDEX.md`, then the relevant topic's `BRIEF.md`.
+5. Open claims, sources, timeline, and open questions as needed.
+6. Tell the user what context was loaded and flag stale or unresolved facts.
 
-If the full repository cannot be loaded, use `research/INDEX.md` and the relevant topic's `BRIEF.md` as the compact context package. Ask for the specific dossier files only if essential evidence is missing.
+If the full repository cannot be loaded, use the bootstrap file, index, and relevant brief as the compact context package. The user may need to attach or paste files depending on the LLM platform. This repository does not automatically connect to every LLM or persist in a model's memory by itself.
 
 ## What this system preserves
 
@@ -23,11 +24,13 @@ If the full repository cannot be loaded, use `research/INDEX.md` and the relevan
 - Distinctions between observation, source assertion, inference, and speculation
 - Corrections to prior assistant answers
 - Open questions and next research actions
-- Conversation behavior that keeps analysis candid, careful, and useful
+- A consistent cross-model research behavior
 
 ## Repository map
 
-- `docs/OPERATING-PROTOCOL.md` — instructions for any assistant loading this repository
+- `AGENTS.md` — investigative research agent behavior
+- `docs/PORTABLE-BOOTSTRAP.md` — copyable prompt for any LLM
+- `docs/OPERATING-PROTOCOL.md` — detailed context restoration and evidence rules
 - `research/INDEX.md` — topic directory and latest status
 - `research/<topic>/BRIEF.md` — compact rehydration brief
 - `research/<topic>/claims.md` — atomic claims and evidence status
