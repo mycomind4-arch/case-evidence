@@ -13,6 +13,8 @@ This is a model-neutral, source-grounded research memory for restoring context a
 5. Open claims, sources, timeline, and open questions as needed.
 6. Tell the user what context was loaded and flag stale or unresolved facts.
 
+To evaluate a fresh chat's ability to audit rather than merely retrieve context, use [the blind audit prompt](docs/BLIND-AUDIT-PROMPT.md). It asks the model to make an initial assessment before reading the prior audit.
+
 If the full repository cannot be loaded, use the bootstrap file, index, and relevant brief as the compact context package. The user may need to attach or paste files depending on the LLM platform. This repository does not automatically connect to every LLM or persist in a model's memory by itself.
 
 ## What this system preserves
@@ -30,6 +32,7 @@ If the full repository cannot be loaded, use the bootstrap file, index, and rele
 
 - `AGENTS.md` — investigative research agent behavior
 - `docs/PORTABLE-BOOTSTRAP.md` — copyable prompt for any LLM
+- `docs/BLIND-AUDIT-PROMPT.md` — prompt for independent source audit in a fresh chat
 - `docs/OPERATING-PROTOCOL.md` — detailed context restoration and evidence rules
 - `research/INDEX.md` — topic directory and latest status
 - `research/<topic>/BRIEF.md` — compact rehydration brief
@@ -55,4 +58,4 @@ Never change a claim's status silently. Record why and when it changed.
 
 ## Privacy and safety
 
-This repository is currently public. Do not put personal identifiers, private correspondence, medical records, credentials, or other sensitive material here. If a topic requires sensitive evidence, redact it or move that work to a private repository before adding it.
+This repository is currently public. Do not put personal identifiers, private correspondence, medical records, credentials, or other sensitive material here. If a topic requires sensitive evidence, redact it or move that research to a private repository before adding it.
