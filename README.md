@@ -1,52 +1,55 @@
-# Case Evidence
+# Research Memory
 
-**Status: Platform/infrastructure concept — not a consumer vertical.**
+> **Start here in a new chat.** Read this file first, then read [the operating protocol](docs/OPERATING-PROTOCOL.md), [the dossier index](research/INDEX.md), and the dossier relevant to the user's request. Use the dossier to restore context; verify any time-sensitive claim from current primary sources before relying on it.
 
-## Purpose
+This repository is a durable, source-grounded context system for research conducted with an AI assistant. It is designed to be loaded on demand in a new conversation.
 
-Provide reusable document, evidence, provenance, timeline, and case-analysis primitives for specialized MailMyPDF verticals.
+## Load sequence
 
-## Core model
+1. Read this README.
+2. Read [docs/OPERATING-PROTOCOL.md](docs/OPERATING-PROTOCOL.md) for behavior and evidence rules.
+3. Read [research/INDEX.md](research/INDEX.md) to find the relevant topic.
+4. Read the topic's `BRIEF.md`, then its claims, sources, timeline, and open questions as needed.
+5. Tell the user what context was loaded and flag any stale or unresolved facts.
 
-**Case → Documents → Extracted Facts → Evidence → Relationships → Events → Findings → Actions**
+If the full repository cannot be loaded, use `research/INDEX.md` and the relevant topic's `BRIEF.md` as the compact context package. Ask for the specific dossier files only if essential evidence is missing.
 
-Every important derived fact should retain provenance to its source document/page where possible, with confidence and review state where applicable.
+## What this system preserves
 
-## Intended consumers
+- The user's research question and scope
+- A dated timeline of claims and events
+- A claim ledger with explicit evidence status
+- Source records, provenance, and limitations
+- Distinctions between observation, source assertion, inference, and speculation
+- Corrections to prior assistant answers
+- Open questions and next research actions
+- Conversation behavior that keeps analysis candid, careful, and useful
 
-- Code Enforcement
-- Tenant Reply
-- Insurance Claims
-- Benefits Appeal
-- GovReply
-- Appeal Mail
-- Records Requests
-- future case-oriented verticals
+## Repository map
 
-## Core capabilities
+- `docs/OPERATING-PROTOCOL.md` — instructions for any assistant loading this repository
+- `research/INDEX.md` — topic directory and latest status
+- `research/<topic>/BRIEF.md` — compact rehydration brief
+- `research/<topic>/claims.md` — atomic claims and evidence status
+- `research/<topic>/sources.md` — source log with dates and provenance
+- `research/<topic>/timeline.md` — dated event and reporting timeline
+- `research/<topic>/open-questions.md` — unresolved questions and next steps
+- `CHANGELOG.md` — significant repository changes and corrections
 
-- document ingestion/extraction
-- page-level provenance
-- evidence records and relationships
-- timeline/event reconstruction
-- deadline primitives
-- contradiction/gap detection
-- human review state
-- auditable findings
-- export/API interfaces
+## Evidence labels
 
-## Architecture guidance
+Use these labels consistently:
 
-This should eventually live as shared platform infrastructure or a reusable package, not become another consumer-facing product. FairProcess and FairProcessMaps are reference implementations and sources of technology to evaluate, not systems to blindly copy wholesale.
+- **Verified** — directly supported by reliable evidence, with a citation or source record.
+- **Corroborated** — supported by multiple independent sources.
+- **Contradicted** — reliable evidence conflicts with the claim.
+- **Unverified** — evidence is insufficient or the source cannot be authenticated.
+- **Inference** — a reasoned conclusion derived from stated evidence; explain the reasoning.
+- **Speculation** — a possible explanation that currently lacks adequate evidence.
+- **Unknown** — not established either way.
 
-## Non-goals
+Never change a claim's status silently. Record why and when it changed.
 
-- consumer legal advice
-- jurisdiction rules without authoritative sources
-- opaque AI conclusions
-- duplicated vertical-specific workflows
-- premature microservices or agent orchestration
+## Privacy and safety
 
-## Success criterion
-
-A vertical should be able to ingest real documents and produce a source-linked, reviewable case record without rebuilding extraction, provenance, evidence, or timeline logic from scratch.
+This repository is currently public. Do not put personal identifiers, private correspondence, medical records, credentials, or other sensitive material here. If a topic requires sensitive evidence, redact it or move that work to a private repository before adding it.
