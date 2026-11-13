@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "repository": "mycomind4-arch/case-evidence",
+  "manifest_updated": "2026-11-13",
+  "default_branch": "main",
+  "purpose": "Portable, source-grounded investigative research memory for use across LLMs.",
+  "load_order": [
+    "README.md",
+    "AGENTS.md",
+    "docs/PORTABLE-BOOTSTRAP.md",
+    "docs/OPERATING-PROTOCOL.md",
+    "research/manifest.json",
+    "research/INDEX.md"
+  ],
+  "global_files": {
+    "portable_bootstrap": "docs/PORTABLE-BOOTSTRAP.md",
+    "operating_protocol": "docs/OPERATING-PROTOCOL.md",
+    "blind_audit_prompt": "docs/BLIND-AUDIT-PROMPT.md",
+    "cross_dossier_connections": "research/CROSS-DOSSIER-CONNECTIONS.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "dossier_file_convention": [
+    "BRIEF.md",
+    "claims.md",
+    "sources.md",
+    "timeline.md",
+    "connection-map.md",
+    "open-questions.md"
+  ],
+  "dossiers": [
+    {
+      "id": "november-17-blackout",
+      "path": "research/november-17-blackout",
+      "brief": "research/november-17-blackout/BRIEF.md",
+      "title": "November 17 blackout, blue streetlights, and 18 GHz/vaccine claims",
+      "aliases": [
+        "Nov 17 blackout",
+        "blue streetlights",
+        "18 GHz",
+        "vaccine activation",
+        "power outage prediction"
+      ],
+      "status": "active",
+      "last_verified": "2026-11-11",
+      "sensitive": false,
+      "note": "Research claims about public events and misinformation; verify time-sensitive forecasts against current local and official sources."
+    },
+    {
+      "id": "3i-atlas",
+      "path": "research/3i-atlas",
+      "brief": "research/3i-atlas/BRIEF.md",
+      "title": "3I/ATLAS: orbit, chemistry, activity, and technosignature searches",
+      "aliases": [
+        "3I/ATLAS",
+        "C/2025 N1 (ATLAS)",
+        "interstellar comet",
+        "18 GHz search coverage"
+      ],
+      "status": "active",
+      "last_verified": "2026-11-12",
+      "audit": "research/3i-atlas/AUDIT-2026-11-12.md",
+      "load_test": "research/3i-atlas/LOAD-TEST.md",
+      "sensitive": false,
+      "note": "Snapshot is historical; refresh orbit, publications, and changing project-page search status before current claims."
+    }
+  ],
+  "evidence_labels": [
+    "Verified",
+    "Corroborated",
+    "Contradicted",
+    "Unverified",
+    "Inference",
+    "Speculation",
+    "Unknown"
+  ],
+  "privacy": {
+    "repository_is_public": true,
+    "do_not_store": [
+      "credentials",
+      "private correspondence",
+      "medical records",
+      "unredacted personal identifiers"
+    ]
+  }
+}
