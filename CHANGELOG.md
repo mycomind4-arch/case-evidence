@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-13 — Machine-readable research manifest
+- Added `research/manifest.json` with dossier IDs, aliases, paths, status, verification dates, and standard load order.
+- Updated README and portable bootstrap to use the manifest as navigation metadata while explicitly treating it as non-evidence.
+
 ## 2026-11-13 — Reusable research system layer
 - Added copy-ready templates for new dossiers, claim ledgers, source registers, connection maps, and research updates.
 - Added a cross-dossier connection register and documented how to track narrative overlap separately from established causal links.
@@ -20,7 +24,7 @@
 ## 2026-11-12 — Add substantial fresh-chat research test
 - Added a dated 3I/ATLAS dossier covering orbit, observations, isotopic composition, comet activity, dust modeling, radio searches, source quality, and open questions.
 - Added atomic claims, source register, chronology, connection map, open questions, and a 12-question fresh-chat retrieval test.
-- Updated the research index. Snapshot date and source-specific caveats are explicit; volatile facts require refresh.
+- Updated the research index. Snapshot date and source-specific caveats are explicit; volatile facts require live rechecking.
 
 ## 2026-11-11 — Replace repository concept
 - Replaced the original MailMyPDF case-evidence platform README with a loadable research-memory README.
