@@ -15,6 +15,8 @@ This is a model-neutral, source-grounded research memory for restoring context a
 
 To evaluate a fresh chat's ability to audit rather than merely retrieve context, use [the blind audit prompt](docs/BLIND-AUDIT-PROMPT.md). It asks the model to make an initial assessment before reading the prior audit.
 
+Use [the reusable templates](templates/) when starting a dossier or recording claims, sources, links, and research updates. [The cross-dossier connection register](research/CROSS-DOSSIER-CONNECTIONS.md) records links across topics while distinguishing narrative overlap from demonstrated relationships.
+
 If the full repository cannot be loaded, use the bootstrap file, index, and relevant brief as the compact context package. The user may need to attach or paste files depending on the LLM platform. This repository does not automatically connect to every LLM or persist in a model's memory by itself.
 
 ## What this system preserves
@@ -34,7 +36,9 @@ If the full repository cannot be loaded, use the bootstrap file, index, and rele
 - `docs/PORTABLE-BOOTSTRAP.md` — copyable prompt for any LLM
 - `docs/BLIND-AUDIT-PROMPT.md` — prompt for independent source audit in a fresh chat
 - `docs/OPERATING-PROTOCOL.md` — detailed context restoration and evidence rules
+- `templates/` — copy-ready dossier, claim, source, connection, and update templates
 - `research/INDEX.md` — topic directory and latest status
+- `research/CROSS-DOSSIER-CONNECTIONS.md` — cross-topic relationship register
 - `research/<topic>/BRIEF.md` — compact rehydration brief
 - `research/<topic>/claims.md` — atomic claims and evidence status
 - `research/<topic>/sources.md` — source log with dates and provenance
