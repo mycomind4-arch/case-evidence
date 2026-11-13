@@ -1,6 +1,6 @@
 # Research Memory
 
-> **Start here in any new chat.** Attach this repository or provide its files. Use [the portable bootstrap prompt](docs/PORTABLE-BOOTSTRAP.md), then read [AGENTS.md](AGENTS.md), [the operating protocol](docs/OPERATING-PROTOCOL.md), [the dossier index](research/INDEX.md), and the dossier relevant to the user's request. Verify time-sensitive claims from current primary sources before relying on them.
+> **Start here in any new chat.** Attach this repository or provide its files. Use [the portable bootstrap prompt](docs/PORTABLE-BOOTSTRAP.md), then read [AGENTS.md](AGENTS.md), [the operating protocol](docs/OPERATING-PROTOCOL.md), [the research manifest](research/manifest.json), [the dossier index](research/INDEX.md), and the dossier relevant to the user's request. Verify time-sensitive claims from current primary sources before relying on them.
 
 This is a model-neutral, source-grounded research memory for restoring context and behavior across different LLMs. It stores the common research method and evidence record; each LLM must use the tools available in its current environment and must not pretend to have capabilities it lacks.
 
@@ -9,7 +9,7 @@ This is a model-neutral, source-grounded research memory for restoring context a
 1. Attach or provide this repository to the LLM.
 2. Use the prompt in `docs/PORTABLE-BOOTSTRAP.md`.
 3. Read this README, `AGENTS.md`, and `docs/OPERATING-PROTOCOL.md`.
-4. Read `research/INDEX.md`, then the relevant topic's `BRIEF.md`.
+4. Read `research/manifest.json` and `research/INDEX.md`, then the relevant topic's `BRIEF.md`.
 5. Open claims, sources, timeline, and open questions as needed.
 6. Tell the user what context was loaded and flag stale or unresolved facts.
 
@@ -37,7 +37,8 @@ If the full repository cannot be loaded, use the bootstrap file, index, and rele
 - `docs/BLIND-AUDIT-PROMPT.md` — prompt for independent source audit in a fresh chat
 - `docs/OPERATING-PROTOCOL.md` — detailed context restoration and evidence rules
 - `templates/` — copy-ready dossier, claim, source, connection, and update templates
-- `research/INDEX.md` — topic directory and latest status
+- `research/manifest.json` — machine-readable dossier discovery and metadata
+- `research/INDEX.md` — human-readable topic directory and latest status
 - `research/CROSS-DOSSIER-CONNECTIONS.md` — cross-topic relationship register
 - `research/<topic>/BRIEF.md` — compact rehydration brief
 - `research/<topic>/claims.md` — atomic claims and evidence status
