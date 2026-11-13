@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-11-13 — Reusable research system layer
+- Added copy-ready templates for new dossiers, claim ledgers, source registers, connection maps, and research updates.
+- Added a cross-dossier connection register and documented how to track narrative overlap separately from established causal links.
+- Updated README, index, and operating protocol so new chats can discover and apply the reusable structure.
+
 ## 2026-11-12 — Blind audit experiment
 - Added a fresh-chat prompt that requires an initial 3I/ATLAS source audit before reading the existing audit note.
 - Added the prompt to the README so it is discoverable.
